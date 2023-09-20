@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.belajarandroidactivity.DashboardDoaActivity">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kotakzikir"
+        >
+        <TextView
+            android:id="@+id/judulApl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Doa Dan Dzikir App"
+            android:textSize="40dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="190dp"
+            android:layout_marginTop="90dp"
+            />
+        <ImageView
+            android:id="@+id/fotoApl"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@drawable/logo_doa"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="65dp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvPilihan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="180dp"
+        android:text="Pilihan Doa Dan Dzikir"
+        android:layout_marginTop="-40dp"
+        android:textColor="@color/dpurple"
+        android:layout_below="@+id/header"
+        />
+    <Button
+        android:id="@+id/btnLengkap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selengkapnya"
+        android:background="@color/dpurple"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="-40dp"
+        android:layout_marginStart="210dp"
+        android:drawableRight="@drawable/baseline_arrow_forward_24"
+        />
+
+
+    <ScrollView
+        android:id="@+id/sv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/btnLengkap">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDoa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </ScrollView>
+</RelativeLayout>

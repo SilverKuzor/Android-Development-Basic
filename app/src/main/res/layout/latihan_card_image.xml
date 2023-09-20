@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ivDestination"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:src="@drawable/ahmad"
+                android:scaleType="centerCrop"
+
+                />
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FedoLand"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_below="@id/ivDestination"
+                />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvLocation"
+                android:text="Ahmad naufal is bad and not kind"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+
+                /><ImageView
+            android:id="@+id/loclogo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/tvDescription"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/baseline_location_on_24"
+            />
+            <TextView
+                android:id="@+id/tulisanloc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bogor cilebut"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/tvDescription"
+                android:layout_toRightOf="@+id/loclogo"
+                />
+            <ImageView
+                android:id="@+id/favorite"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_toRightOf="@+id/tulisanloc"
+                android:layout_below="@+id/tvDescription"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/baseline_price_check_24"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100 / package"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/tvDescription"
+                android:layout_toRightOf="@+id/favorite"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plan your trip now"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

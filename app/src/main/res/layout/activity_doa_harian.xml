@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.belajarandroidactivity.DoaHarianActivity">
+    <RelativeLayout
+        android:id="@+id/headerDoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_test">
+        <Button
+            android:layout_marginStart="2dp"
+            android:id="@+id/btnComeBack"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#0000"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@drawable/baseline_arrow_back_24"
+            android:drawableTint="@color/white"
+            />
+        <TextView
+            android:id="@+id/judulDzikir"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/doa_harian"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="30dp"
+            android:maxLines="2"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_toRightOf="@id/judulDzikir"
+            android:src="@drawable/doa"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/svListDoanya"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/headerDoa"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDoaHarian"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </ScrollView>
+
+
+</RelativeLayout>
